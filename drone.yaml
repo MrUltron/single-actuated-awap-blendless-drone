@@ -1,0 +1,63 @@
+PID is used to stabilize rotation (yaw), and visual feedback can support navigation and obstacle detection.
+
+---
+
+## 🔧 Setup Instructions
+
+1. Assemble all hardware components using the modular frame.
+2. Connect ESC to Raspberry Pi PWM GPIO.
+3. Wire the IMU (I2C) and camera module to Pi.
+4. Power via LiPo battery (ensure proper BEC if needed).
+5. Flash Python/C++ code to Pi for PID control.
+6. Launch `main.py` to start the flight logic.
+
+---
+
+## 💻 Software Stack
+
+- Python 3.x
+- "OpenCV" for vision
+- `smbus2` / `MPU6050` library for IMU
+- `pigpio` or `RPi.GPIO` for PWM
+- Optional: ROS Noetic / SLAM modules
+
+---
+
+## 📷 Prototype
+
+![Prototype](./8a4320a8-704f-43de-b6ca-ed0cdb6d32b7.jpg)
+
+---
+
+## 📊 Test Results
+
+| Test Type         | Result                   |
+|------------------|--------------------------|
+| Lift-off         | Achieved (with 3S LiPo)  |
+| Stability (Yaw)  | Maintained using PID     |
+| Hover Duration   | ~2 minutes (test config) |
+| Payload Support  | ~50g                     |
+
+---
+
+## 🔭 Future Scope
+
+- Add dynamic servo fins for full directional control
+- Integrate SLAM & obstacle avoidance
+- Upgrade to AI-based flight planning
+- Improve balance with active counterweights
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. Feel free to contribute or use with attribution.
+
+---
+
+## ✉️ Contact
+
+**Jaywing Technology pvt ltd**  
+📧 Email: `support@jaywingtech.in`  
+🌐 Website: [Coming Soon]
+🌐 Website: [Coming Soon]
